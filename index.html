@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alper Kapusızoğlu">
+    <title>To do Uygulaması</title>
+
+
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="to-do-nav">
+        <h2 class="nav-header">To do Uygulaması</h2>
+    </nav>
+
+
+    <div class="container">
+        <h3 class="form-title">Görev Ekle</h3>
+
+        <form>
+            <div class="input-group">
+                <input type="text" id="txtTaskInput">
+                <button type="submit" class="btn btn-add"><i class="fa fa-plus"></i></button>
+            </div>
+        </form>
+
+
+        <div class="card task-card">
+            <div class="card-header controls">
+                <div class="filters">
+                    <span id="all" class="active">Hepsi</span>
+                    <span id="pending">Yapılacaklar</span>
+                    <span id="completed">Tamamlananlar</span>
+                </div>
+                <button id="deleteAll" class="btn btn-danger btn-sm float-end">Hepsini Sil</button>
+            </div>
+
+            <ul id="task-list" class="list-group">
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>
